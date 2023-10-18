@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h4>calc</h4>
+      <div class="theme">
+        <p>Theme</p>
+        <div class="toggle">
+          <div class="numbers">
+            <p class="change">1</p>
+            <p class="change">2</p>
+            <p class="change">3</p>
+          </div>
+          <div class="button">
+            <div class="divtoggle"></div>
+            <button></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="numberscreen"></div>
+    <div class="numberkey">
+      <div class="row">
+        <button class="keys" value="7">7</button>
+        <button class="keys" value="8">8</button>
+        <button class="keys" value="9">9</button>
+        <button class="keys add" value="DEL">DEL</button>
+      </div>
+      <div class="row">
+        <button class="keys" value="4">4</button>
+        <button class="keys" value="5">5</button>
+        <button class="keys" value="6">6</button>
+        <button class="keys" value="+">+</button>
+      </div>
+      <div class="row">
+        <button class="keys" value="1">1</button>
+        <button class="keys" value="2">2</button>
+        <button class="keys" value="3">3</button>
+        <button class="keys" value="-">-</button>
+      </div>
+      <div class="row">
+        <button class="keys" value=".">.</button>
+        <button class="keys" value="0">0</button>
+        <button class="keys" value="/">/</button>
+        <button class="keys" value="*">x</button>
+      </div>
+      <div class="row">
+        <button class="keys add" value="RESET">RESET</button>
+        <button class="keys equal" value="=">=</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

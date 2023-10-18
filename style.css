@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: League Spartan;
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4,p{
+    margin: 0;
+}
+/* main */
+main{
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* header */
+main header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h4{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+header .theme{
+    display: flex;
+    gap: 10px;
+}
+.theme>p{
+    cursor: pointer;
+    align-self: last baseline;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 100%);
+}
+.theme .toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.toggle .numbers{
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.toggle .button{
+    border-radius: 10px;
+    position: relative;
+}
+.toggle .button button{
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 30px;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(223, 31%, 20%);
+}
+.button .divtoggle{
+    cursor: pointer;
+    width: 14.5px;
+    height: 14.5px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+}
+.divtoggle:hover{
+    opacity: 0.7;
+}
+/* position changing */
+.button.whitetheme .divtoggle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button.purpletheme .divtoggle{
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+}
+/* numberscreen */
+main .numberscreen{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 2.2rem;
+    padding: 0 20px;
+    color: hsl(0, 0%, 100%);
+}
+/* numberkey */
+main .numberkey{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.numberkey .row{
+    display: flex;
+    gap: 20px;
+}
+.row .keys{
+    cursor: pointer;
+    flex: 1 1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 0;
+    font-weight: 700;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0.7px 3px hsl(28, 16%, 65%);
+}
+.row .add{
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0.7px 3px hsl(224, 28%, 35%);
+}
+.row .equal{
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0.7px 3px hsl(6, 70%, 34%);
+}
+
+/* white theme */
+body.bg{
+    background-color: hsl(0, 0%, 90%);
+}
+main header.cl h4{
+    color: hsl(60, 10%, 19%);
+}
+main header .theme.cl1 p{
+    color: hsl(60, 10%, 19%);
+}
+.theme .button.cl2 .divtoggle{
+    background-color: hsl(25, 98%, 40%);
+}
+.theme .button.cl3 button{
+    background-color: hsl(0, 5%, 81%);
+}
+main.bg1 .numberscreen{
+    background-color: hsl(0, 0%, 93%);
+}
+main.bg2 .numberkey{
+    background-color: hsl(0, 5%, 81%);
+}
+.numberkey .row.bg5 .keys{
+    font-weight: 700;
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0.7px 3px hsl(35, 11%, 61%);
+}
+.numberkey .row.bg3 .equal{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0.7px 3px hsl(25, 99%, 27%);
+}
+.numberkey .row.bg4 .add{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0.7px 3px hsl(185, 58%, 25%);
+}
+
+/* purple theme */
+body.bg6{
+    background-color: hsl(268, 75%, 9%);
+}
+main header.cl4 h4{
+    color: hsl(52, 100%, 62%);
+}
+main header .theme.cl5 p{
+    color: hsl(52, 100%, 62%);
+}
+.theme .button.cl6 .divtoggle{
+    background-color: hsl(176, 100%, 44%);
+}
+.theme .button.cl7 button{
+    background-color: hsl(268, 71%, 12%);
+}
+main.bg7 .numberscreen{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+main.bg8 .numberkey{
+    background-color: hsl(268, 71%, 12%);
+}
+.numberkey .row.bg11 .keys{
+    font-weight: 700;
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0.7px 3px hsl(290, 70%, 36%);
+}
+.numberkey .row.bg9 .equal{
+    color: hsl(198, 20%, 13%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0.7px 3px hsl(177, 92%, 70%);
+}
+.numberkey .row.bg10 .add{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0.7px 3px hsl(285, 91%, 52%);
+}
+@media all and (max-width:450px) {
+    main{
+        padding: 20px;
+    }
+    .row .keys{
+        font-size: 2rem;
+    }
+    .row .add{
+        font-size: 1.2rem;
+    }
+}
